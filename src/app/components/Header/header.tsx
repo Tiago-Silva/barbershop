@@ -12,7 +12,6 @@ const Header = () => {
                 alt='BarberShopping'
                 width={200}
                 height={25}
-                objectFit='cover'
             />
 
             <ButtonMenu>
