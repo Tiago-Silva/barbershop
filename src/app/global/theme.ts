@@ -14,7 +14,7 @@ export default {
         attention_light: 'rgba(232, 63, 91, 0.5)',
 
         sidebar: '#30353c',
-        iconCloseOpen: '#adb3bd',
+        iconMenu: '#e2e2e2',
 
         shape: '#FFFFFF',
         title: '#FFE600',

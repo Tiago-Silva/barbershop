@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: #F0F2F5;
+  /*background-color: #F0F2F5;*/
+  background-color: #141518;
   overflow-x: hidden;
   overflow-y: hidden;
 }
