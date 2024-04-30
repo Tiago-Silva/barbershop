@@ -3,6 +3,15 @@ import styled from "styled-components";
 
 export const Container = styled.main`
     padding: 20px;
+    overflow-y: scroll;
+    max-height: 100vh;
+
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    -ms-overflow-style: none;
 `;
 
 export const Title = styled.h2`
