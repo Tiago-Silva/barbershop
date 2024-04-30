@@ -10,7 +10,6 @@ export const Container = styled.div`
     height: 100px;
     margin-bottom: 20px;
     
-    padding: 20px;
 `;
 
 export const ButtonMenu = styled.button`
