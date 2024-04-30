@@ -3,7 +3,7 @@
 
 export default {
     colors: {
-        primary: '#5636D3',
+        primary: '#8162FF',
         secondary: '#FF872C',
 
         secondary_light: 'rgba(255, 135, 44, 0.3)',
@@ -22,11 +22,16 @@ export default {
         text_bar: '#969cB2',
         text_dark: '#000000',
 
-        background: '#F0F2F5',
+        background: '#141518',
+        secondary_black: '#1A1B1F',
         background_card: '#303035',
         background_header: '#2a2e34',
         background_promotion: '#30353c',
 
+        gray01: '#26272B',
+        gray02: '#4E525B',
+        gray03: '#838896',
+        red: '#EF4444'
     },
 
     // fonts: {
