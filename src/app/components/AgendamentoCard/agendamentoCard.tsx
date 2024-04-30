@@ -28,7 +28,7 @@ const AgendamentoCard = () => {
                     <FooterRightContent>
                         <FooterImg
                             alt='Barber'
-                            src='/rating.svg'
+                            src='/img.svg'
                             width={40}
                             height={40}
                         />

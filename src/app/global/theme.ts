@@ -1,4 +1,3 @@
-import {white} from "next/dist/lib/picocolors";
 
 
 export default {
