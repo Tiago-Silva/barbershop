@@ -36,11 +36,20 @@ export const Info = styled.h2`
     line-height: 1.5;
 `;
 
-export const ButtonCard = styled.button`
+export const WrapperButton = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+`;
+
+export const ButtonCard = styled.button`
+    width: 90%;
     color: ${({theme}) => theme.colors.text_white};
     background-color: ${({theme}) => theme.colors.gray01};
     border: 1px solid ${({theme}) => theme.colors.gray01};
+    border-radius: 15px;
     font-size: 1rem;
     font-weight: 700;
     

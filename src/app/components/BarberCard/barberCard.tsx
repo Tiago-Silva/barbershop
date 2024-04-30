@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonCard, Container, ImgCard, Info, Title} from "@/app/components/BarberCard/styles";
+import {ButtonCard, Container, ImgCard, Info, Title, WrapperButton} from "@/app/components/BarberCard/styles";
 
 const BarberCard = () => {
     return (
@@ -12,7 +12,9 @@ const BarberCard = () => {
             />
             <Title>Vintage Barber</Title>
             <Info>Avenida São Sebastião, 357, São Paulo</Info>
-            <ButtonCard>Reservar</ButtonCard>
+            <WrapperButton>
+                <ButtonCard>Reservar</ButtonCard>
+            </WrapperButton>
         </Container>
     );
 };
