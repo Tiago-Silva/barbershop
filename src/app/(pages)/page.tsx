@@ -1,6 +1,6 @@
 'use client';
 
-import {Container} from "@/app/(pages)/styles.page";
+import {Container, Title} from "@/app/(pages)/styles.page";
 import Header from "@/app/components/Header/header";
 import Hello from "@/app/components/Hello/hello";
 import InputSearch from "@/app/components/InputSearch/inputSearch";
@@ -12,7 +12,11 @@ export default function Home() {
         <Header />
         <Hello />
         <InputSearch />
+
+        <Title>Agendamentos</Title>
         <AgendamentoCard />
+
+        <Title>Recomendados</Title>
     </Container>
   );
 }
