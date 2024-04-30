@@ -8,13 +8,13 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-    color: white;
+    color: ${({theme}) => theme.colors.text_white};;
     font-size: 1.5rem;
     font-weight: 700;
 `;
 
 export const SubTitle = styled.p`
-    color: white;
+    color: ${({theme}) => theme.colors.text_white};;
     font-size: 1rem;
     text-transform: capitalize;
 `;

@@ -1,4 +1,4 @@
-
+import {white} from "next/dist/lib/picocolors";
 
 
 export default {
@@ -15,6 +15,7 @@ export default {
 
         sidebar: '#30353c',
         iconMenu: '#e2e2e2',
+        text_white: '#FFFFFF',
 
         shape: '#FFFFFF',
         title: '#FFE600',
@@ -31,7 +32,9 @@ export default {
         gray01: '#26272B',
         gray02: '#4E525B',
         gray03: '#838896',
-        red: '#EF4444'
+        red: '#EF4444',
+
+        statusCard: '#221c3d'
     },
 
     // fonts: {
