@@ -1,17 +1,27 @@
 import React from 'react';
 import {ButtonCard, Container, ImgCard, Info, Title, WrapperButton} from "@/app/components/BarberCard/styles";
 
-const BarberCard = () => {
+interface Props {
+    image: string;
+    title: string;
+    info: string;
+}
+
+const BarberCard = ({
+    image,
+    title,
+    info,
+}: Props) => {
     return (
         <Container>
             <ImgCard
                 alt='Imagem barbearia'
-                src='/img.svg'
+                src={image}
                 width={170}
                 height={170}
             />
-            <Title>Vintage Barber</Title>
-            <Info>Avenida São Sebastião, 357, São Paulo</Info>
+            <Title>{title}</Title>
+            <Info>{info}</Info>
             <WrapperButton>
                 <ButtonCard>Reservar</ButtonCard>
             </WrapperButton>

@@ -19,8 +19,30 @@ export default function Home() {
 
         <Title>Recomendados</Title>
         <WrapperCard>
-            <BarberCard />
-            <BarberCard />
+            <BarberCard
+                image='/img.svg'
+                title='Vintage Barber'
+                info='Avenida São Sebastião, 357, São Paulo'
+            />
+            <BarberCard
+                image='/img01.svg'
+                title='Clássica Cortez'
+                info='Rua Castro Alves, 331, São Paulo'
+            />
+        </WrapperCard>
+
+        <Title>Populares</Title>
+        <WrapperCard>
+            <BarberCard
+                image='/img03.svg'
+                title='Los Barberos'
+                info='Rua Sete de Setembro, 428, São Paulo'
+            />
+            <BarberCard
+                image='/img02.svg'
+                title='Homem Elegante'
+                info='Rua Projetada, 529, São Paulo'
+            />
         </WrapperCard>
     </Container>
   );
