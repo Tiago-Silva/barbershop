@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { FaStar } from "react-icons/fa";
 
 export const Container = styled.div`
     display: flex;
@@ -14,6 +15,8 @@ export const Container = styled.div`
     
     width: 100%;
     gap: 15px;
+    
+    position: relative;
 `;
 
 export const ImgCard = styled(Image)`
@@ -56,4 +59,27 @@ export const ButtonCard = styled.button`
     padding: 10px;
     cursor: pointer;
     outline: none;
+`;
+
+export const WrapperIcon = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: ${( {theme}) => theme.colors.gray04};
+    border-radius: 20px;
+    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    
+    gap: 10px;
+    padding: 5px 10px 5px 10px;
+    width: max-content;
+`;
+
+export const IconStar = styled(FaStar)`
+    color: ${({theme}) => theme.colors.primary};
+    font-size: 1.5rem;
 `;

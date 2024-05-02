@@ -31,6 +31,7 @@ export default {
         gray01: '#26272B',
         gray02: '#4E525B',
         gray03: '#838896',
+        gray04: 'rgba(0, 0, 0, 0.6)',
         red: '#EF4444',
 
         statusCard: '#221c3d'
