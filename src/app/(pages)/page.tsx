@@ -6,6 +6,7 @@ import Hello from "@/app/components/Hello/hello";
 import InputSearch from "@/app/components/InputSearch/inputSearch";
 import AgendamentoCard from "@/app/components/AgendamentoCard/agendamentoCard";
 import BarberCard from "@/app/components/BarberCard/barberCard";
+import Footer from "@/app/components/Footer/footer";
 
 export default function Home() {
   return (
@@ -44,6 +45,8 @@ export default function Home() {
                 info='Rua Projetada, 529, São Paulo'
             />
         </WrapperCard>
+
+        <Footer />
     </Container>
   );
 }
