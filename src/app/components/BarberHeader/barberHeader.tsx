@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import {ButtonMenu, Container, IconMenu, Img} from "@/app/components/BarberHeader/styles";
+import {ButtonMenu, Container, IconMenu, IconReturn, Img, WrapperIcons} from "@/app/components/BarberHeader/styles";
 
 const BarberHeader = () => {
     return (
@@ -13,9 +13,17 @@ const BarberHeader = () => {
                 height={250}
             />
 
-            {/*<ButtonMenu>*/}
-            {/*    <IconMenu />*/}
-            {/*</ButtonMenu>*/}
+            <WrapperIcons>
+
+                <ButtonMenu>
+                    <IconReturn />
+                </ButtonMenu>
+
+                <ButtonMenu>
+                    <IconMenu />
+                </ButtonMenu>
+
+            </WrapperIcons>
         </Container>
     );
 };
