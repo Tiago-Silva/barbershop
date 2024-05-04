@@ -3,20 +3,16 @@ import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
 
 export const Container = styled.header`
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: space-between;
-    //align-items: center;
-    position: relative;
     width: 100%;
     height: auto;
-    //margin: -20px -20px 20px;
-    //right: -20px;
 `;
 
 export const Img = styled(Image)`
-    width: 100%;
+    width: calc(100% + 2 * 20px);
     height: auto;
+    margin-left: -20px;
+    margin-top: -20px;
+    filter: brightness(120%);
 `;
 
 export const ButtonMenu = styled.button`
