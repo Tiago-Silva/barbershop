@@ -7,7 +7,7 @@ const BarberHeader = () => {
     return (
         <Container>
             <Img
-                src='/img.png'
+                src='/images/20.png'
                 alt='BarberShopping'
                 width={390}
                 height={250}

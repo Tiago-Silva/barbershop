@@ -21,13 +21,13 @@ export default function Home() {
         <Title>Recomendados</Title>
         <WrapperCard>
             <BarberCard
-                image='/img.svg'
+                image='/images/20.png'
                 title='Vintage Barber'
                 info='Avenida São Sebastião, 357, São Paulo'
                 star='5.0'
             />
             <BarberCard
-                image='/img01.svg'
+                image='/images/02.png'
                 title='Clássica Cortez'
                 info='Rua Castro Alves, 331, São Paulo'
                 star='4.5'
@@ -37,13 +37,13 @@ export default function Home() {
         <Title>Populares</Title>
         <WrapperCard>
             <BarberCard
-                image='/img03.svg'
+                image='/images/19.png'
                 title='Los Barberos'
                 info='Rua Sete de Setembro, 428, São Paulo'
                 star='5.0'
             />
             <BarberCard
-                image='/img02.svg'
+                image='/images/01.png'
                 title='Homem Elegante'
                 info='Rua Projetada, 529, São Paulo'
                 star='5.0'

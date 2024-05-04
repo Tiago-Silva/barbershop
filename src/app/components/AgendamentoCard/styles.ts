@@ -49,6 +49,7 @@ export const FooterRightContent = styled.div`
 
 export const FooterImg = styled(Image)`
     border-radius: 50%;
+    filter: brightness(120%);
 `;
 
 export const FooterText = styled.span`
