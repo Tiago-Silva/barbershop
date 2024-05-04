@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    ButtonCard,
     Container, IconStar,
     ImgCard,
     Info,
@@ -8,6 +7,7 @@ import {
     WrapperButton,
     WrapperIcon
 } from "@/app/components/BarberCard/styles";
+import Button from "@/app/components/Button/button";
 
 interface Props {
     image: string;
@@ -37,7 +37,10 @@ const BarberCard = ({
             <Title>{title}</Title>
             <Info>{info}</Info>
             <WrapperButton>
-                <ButtonCard>Reservar</ButtonCard>
+                <Button
+                    title='Reservar'
+                    isActived={false}
+                />
             </WrapperButton>
         </Container>
     );

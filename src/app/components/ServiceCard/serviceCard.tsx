@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     Amount,
-    ButtonCard,
     Container,
     FooterRight,
     ImgCard,
@@ -9,6 +8,7 @@ import {
     RightContent,
     Title
 } from "@/app/components/ServiceCard/styles";
+import Button from "@/app/components/Button/button";
 
 interface ServiceCardProps {
     alt: string;
@@ -40,7 +40,10 @@ const ServiceCard = ({
 
                 <FooterRight>
                     <Amount>{amount}</Amount>
-                    <ButtonCard>Reservar</ButtonCard>
+                    <Button
+                        title='Reservar'
+                        isActived={false}
+                    />
                 </FooterRight>
             </RightContent>
 
