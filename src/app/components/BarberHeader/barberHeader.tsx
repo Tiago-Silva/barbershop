@@ -11,6 +11,7 @@ const BarberHeader = () => {
                 alt='BarberShopping'
                 width={390}
                 height={250}
+                priority
             />
 
             <WrapperIcons>
