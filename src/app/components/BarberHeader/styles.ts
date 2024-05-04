@@ -6,6 +6,8 @@ import Image from "next/image";
 export const Container = styled.header`
     width: 100%;
     height: auto;
+
+    position: relative;
 `;
 
 export const Img = styled(Image)`
@@ -14,8 +16,6 @@ export const Img = styled(Image)`
     margin-left: -20px;
     margin-top: -20px;
     filter: brightness(120%);
-    
-    position: relative;
 `;
 
 export const WrapperIcons = styled.div`
