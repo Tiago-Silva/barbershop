@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, {useState} from 'react';
 import {
     Container,
     IconMap,
@@ -64,6 +64,42 @@ const services = [
 ];
 
 const Barber = () => {
+    const [selectContent, setSelectContent] = useState('Serviços');
+
+    const renderContent = () => {
+        switch (selectContent) {
+            case 'Serviços':
+                return (
+                    services.map((service, index) => (
+                        <ServiceCard
+                            key={index}
+                            title={service.title}
+                            info={service.info}
+                            amount={service.amount}
+                            img={service.img}
+                            alt={service.alt}
+                        />
+                    ))
+                )
+            case 'Informações':
+                return (
+                    <InfoBarber
+                        title={'SOBRE NÓS'}
+                        info={'Bem-vindo à Vintage Barber, onde tradição encontra estilo.\n' +
+                            '                Nossa equipe de mestres barbeiros transforma cortes de cabelo\n' +
+                            '                e barbas em obras de arte. Em um ambiente acolhedor, promovemos\n' +
+                            '                confiança, estilo e uma comunidade unida.'}
+                    />
+                )
+            default:
+                return <div>Conteúdo não encontrado</div>;
+        }
+    };
+
+    const handleSelect = (content: string) => {
+        setSelectContent(content);
+    }
+
     return (
         <Container>
             <BarberHeader />
@@ -87,32 +123,17 @@ const Barber = () => {
             <WrapperButtons>
                 <Button
                     title={'Servições'}
-                    isActived={true}
+                    isActived={selectContent === 'Serviços'}
+                    onClick={() => handleSelect('Serviços')}
                 />
                 <Button
                     title={'Informações'}
-                    isActived={false}
+                    isActived={selectContent === 'Informações'}
+                    onClick={() => handleSelect('Informações')}
                 />
             </WrapperButtons>
 
-            {/*${services.map((service, index) => (*/}
-            {/*    <ServiceCard*/}
-            {/*        key={index}*/}
-            {/*        title={service.title}*/}
-            {/*        info={service.info}*/}
-            {/*        amount={service.amount}*/}
-            {/*        img={service.img}*/}
-            {/*        alt={service.alt}*/}
-            {/*    />*/}
-            {/*))}*/}
-
-            <InfoBarber
-                title={'SOBRE NÓS'}
-                info={'Bem-vindo à Vintage Barber, onde tradição encontra estilo.\n' +
-                    '                Nossa equipe de mestres barbeiros transforma cortes de cabelo\n' +
-                    '                e barbas em obras de arte. Em um ambiente acolhedor, promovemos\n' +
-                    '                confiança, estilo e uma comunidade unida.'}
-            />
+            {renderContent()}
 
             <Footer />
         </Container>

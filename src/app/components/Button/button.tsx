@@ -4,14 +4,16 @@ import {Container} from "@/app/components/Button/styles";
 interface Props {
     title: string;
     isActived: boolean;
+    onClick?: () => void;
 }
 
 const Button = ({
     title,
-    isActived
+    isActived,
+    onClick
 }: Props) => {
     return (
-        <Container $isActived={isActived}>
+        <Container $isActived={isActived} onClick={onClick}>
             {title}
         </Container>
     );
