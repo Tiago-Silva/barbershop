@@ -16,6 +16,7 @@ import BarberHeader from "@/app/components/BarberHeader/barberHeader";
 import Footer from "@/app/components/Footer/footer";
 import Button from "@/app/components/Button/button";
 import Line from "@/app/components/Line/line";
+import InfoBarber from "@/app/components/InfoBarber/infoBarber";
 
 const services = [
     {
@@ -94,16 +95,24 @@ const Barber = () => {
                 />
             </WrapperButtons>
 
-            ${services.map((service, index) => (
-                <ServiceCard
-                    key={index}
-                    title={service.title}
-                    info={service.info}
-                    amount={service.amount}
-                    img={service.img}
-                    alt={service.alt}
-                />
-            ))}
+            {/*${services.map((service, index) => (*/}
+            {/*    <ServiceCard*/}
+            {/*        key={index}*/}
+            {/*        title={service.title}*/}
+            {/*        info={service.info}*/}
+            {/*        amount={service.amount}*/}
+            {/*        img={service.img}*/}
+            {/*        alt={service.alt}*/}
+            {/*    />*/}
+            {/*))}*/}
+
+            <InfoBarber
+                title={'SOBRE NÓS'}
+                info={'Bem-vindo à Vintage Barber, onde tradição encontra estilo.\n' +
+                    '                Nossa equipe de mestres barbeiros transforma cortes de cabelo\n' +
+                    '                e barbas em obras de arte. Em um ambiente acolhedor, promovemos\n' +
+                    '                confiança, estilo e uma comunidade unida.'}
+            />
 
             <Footer />
         </Container>
