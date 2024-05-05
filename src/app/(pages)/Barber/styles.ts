@@ -38,12 +38,6 @@ export const Info = styled.h2`
     font-weight: 500;
 `;
 
-export const Line = styled.hr`
-    width: calc(100% + 2 * 20px);
-    margin: 20px 0 0 -20px;
-    border: 1px solid ${({theme}) => theme.colors.gray02};
-`;
-
 export const WrapperIcon = styled.div`
     display: flex;
     flex-direction: row;

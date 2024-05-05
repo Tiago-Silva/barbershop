@@ -6,7 +6,6 @@ import {
     IconMap,
     IconStar,
     Info,
-    Line,
     Title,
     WrapperButtons,
     WrapperIcon,
@@ -16,6 +15,7 @@ import ServiceCard from "@/app/components/ServiceCard/serviceCard";
 import BarberHeader from "@/app/components/BarberHeader/barberHeader";
 import Footer from "@/app/components/Footer/footer";
 import Button from "@/app/components/Button/button";
+import Line from "@/app/components/Line/line";
 
 const services = [
     {
