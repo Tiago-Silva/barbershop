@@ -63,16 +63,12 @@ export const IconMap = styled(FaMapMarkerAlt)`
     font-size: 1rem;
 `;
 
-export const Button = styled.button`
-    width: 90%;
-    color: ${({theme}) => theme.colors.text_white};
-    background-color: ${({theme}) => theme.colors.gray01};
-    border: 1px solid ${({theme}) => theme.colors.gray01};
-    border-radius: 15px;
-    font-size: 1rem;
-    font-weight: 700;
-    
-    padding: 10px;
-    cursor: pointer;
-    outline: none;
+export const WrapperButtons = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 20px;
+    gap: 10px;
 `;

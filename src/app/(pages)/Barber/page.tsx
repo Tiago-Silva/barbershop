@@ -1,10 +1,21 @@
 'use client';
 
 import React from 'react';
-import {Container, IconMap, IconStar, Info, Line, Title, WrapperIcon, WrapperInfo} from "@/app/(pages)/Barber/styles";
+import {
+    Container,
+    IconMap,
+    IconStar,
+    Info,
+    Line,
+    Title,
+    WrapperButtons,
+    WrapperIcon,
+    WrapperInfo
+} from "@/app/(pages)/Barber/styles";
 import ServiceCard from "@/app/components/ServiceCard/serviceCard";
 import BarberHeader from "@/app/components/BarberHeader/barberHeader";
 import Footer from "@/app/components/Footer/footer";
+import Button from "@/app/components/Button/button";
 
 const services = [
     {
@@ -71,6 +82,17 @@ const Barber = () => {
             </WrapperInfo>
 
             <Line />
+
+            <WrapperButtons>
+                <Button
+                    title={'Servições'}
+                    isActived={true}
+                />
+                <Button
+                    title={'Informações'}
+                    isActived={false}
+                />
+            </WrapperButtons>
 
             ${services.map((service, index) => (
                 <ServiceCard
