@@ -28,7 +28,7 @@ export const WrapperIcons = styled.div`
     width: 100%;
     top: 0;
     
-    padding: 20px 40px 0 20px;
+    padding: 20px 20px 0 20px;
 `;
 
 
