@@ -8,10 +8,10 @@ const Header = () => {
     return (
         <Container>
             <Image
-                src='/logo.png'
+                src='/logo-barber.png'
                 alt='BarberShopping'
                 width={200}
-                height={25}
+                height={45}
             />
 
             <ButtonMenu>
