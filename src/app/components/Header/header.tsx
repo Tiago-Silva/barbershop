@@ -11,7 +11,7 @@ const Header = () => {
                 src='/logo-barber.png'
                 alt='BarberShopping'
                 width={200}
-                height={45}
+                height={25}
             />
 
             <ButtonMenu>
